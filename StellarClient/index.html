@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<style>
+    body {
+      background-image: url('https://pbs.twimg.com/media/FDW8fGIVcAUwXKg?format=jpg&name=4096x4096');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Stellar Client</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1047435122271584257/1062825157284077568/Picsart_23-01-11_20-07-27-819.png">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- Fonts CSS-->
+        <link rel="stylesheet" href="css/heading.css">
+        <link rel="stylesheet" href="css/body.css">
+    </head>
+    <body id="page-top">                  
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Stellar Client</a>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Feature</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Dowload</a>
+                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./StellarDev/stellardev.html">StellarDev</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-12" src="https://cdn.discordapp.com/attachments/1061005492840825002/1062810038713978920/Picsart_23-01-11_20-07-27-819.png" alt="">
+
+                <!-- Masthead Heading-->
+                <style type="text/css">
+                    .snowflake {
+                      color: rgb(255, 251, 0);
+                      font-size: 1em;
+                      font-family: Arial, sans-serif;
+                      text-shadow: 0 0 5px rgb(230, 255, 2);
+                    }
+                
+                    @-webkit-keyframes snowflakes-fall {
+                      0% {
+                        top: -10%
+                      }
+                
+                      100% {
+                        top: 100%
+                      }
+                    }
+                
+                    @-webkit-keyframes snowflakes-shake {
+                
+                      0%,
+                      100% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0)
+                      }
+                
+                      50% {
+                        -webkit-transform: translateX(80px);
+                        transform: translateX(80px)
+                      }
+                    }
+                
+                    @keyframes snowflakes-fall {
+                      0% {
+                        top: -10%
+                      }
+                
+                      100% {
+                        top: 100%
+                      }
+                    }
+                
+                    @keyframes snowflakes-shake {
+                
+                      0%,
+                      100% {
+                        transform: translateX(0)
+                      }
+                
+                      50% {
+                        transform: translateX(80px)
+                      }
+                    }
+                
+                    .snowflake {
+                      position: fixed;
+                      top: -10%;
+                      z-index: 9999;
+                      -webkit-user-select: none;
+                      -moz-user-select: none;
+                      -ms-user-select: none;
+                      user-select: none;
+                      cursor: default;
+                      -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+                      -webkit-animation-duration: 5s, 90s;
+                      -webkit-animation-timing-function: linear, ease-in-out;
+                      -webkit-animation-iteration-count: infinite, infinite;
+                      -webkit-animation-play-state: running, running;
+                      animation-name: snowflakes-fall, snowflakes-shake;
+                      animation-duration: 3s, 9s;
+                      animation-timing-function: linear, ease-in-out;
+                      animation-iteration-count: infinite, infinite;
+                      animation-play-state: running, running
+                    }
+                
+                    .snowflake:nth-of-type(0) {
+                      left: 1%;
+                      -webkit-animation-delay: 0s, 0s;
+                      animation-delay: 0s, 0s
+                    }
+                
+                    .snowflake:nth-of-type(1) {
+                      left: 10%;
+                      -webkit-animation-delay: 1s, 1s;
+                      animation-delay: 1s, 1s
+                    }
+                
+                    .snowflake:nth-of-type(2) {
+                      left: 20%;
+                      -webkit-animation-delay: 6s, .5s;
+                      animation-delay: 6s, .5s
+                    }
+                
+                    .snowflake:nth-of-type(3) {
+                      left: 30%;
+                      -webkit-animation-delay: 4s, 2s;
+                      animation-delay: 4s, 2s
+                    }
+                
+                    .snowflake:nth-of-type(4) {
+                      left: 40%;
+                      -webkit-animation-delay: 2s, 2s;
+                      animation-delay: 2s, 2s
+                    }
+                
+                    .snowflake:nth-of-type(5) {
+                      left: 50%;
+                      -webkit-animation-delay: 8s, 3s;
+                      animation-delay: 8s, 3s
+                    }
+                
+                    .snowflake:nth-of-type(6) {
+                      left: 60%;
+                      -webkit-animation-delay: 6s, 2s;
+                      animation-delay: 6s, 2s
+                    }
+                
+                    .snowflake:nth-of-type(7) {
+                      left: 70%;
+                      -webkit-animation-delay: 2.5s, 1s;
+                      animation-delay: 2.5s, 1s
+                    }
+                
+                    .snowflake:nth-of-type(8) {
+                      left: 80%;
+                      -webkit-animation-delay: 1s, 0s;
+                      animation-delay: 1s, 0s
+                    }
+                
+                    .snowflake:nth-of-type(9) {
+                      left: 90%;
+                      -webkit-animation-delay: 3s, 1.5s;
+                      animation-delay: 3s, 1.5s
+                    }
+                
+                    .snowflake:nth-of-type(10) {
+                      left: 25%;
+                      -webkit-animation-delay: 2s, 0s;
+                      animation-delay: 2s, 0s
+                    }
+                
+                    .snowflake:nth-of-type(11) {
+                      left: 65%;
+                      -webkit-animation-delay: 4s, 2.5s;
+                      animation-delay: 10s, 2.5s
+                    }
+                  </style>
+                  <style type="text/css">
+                    * {
+                      cursor: url(), auto !important;
+                    }
+                  </style>
+                
+                <body onLoad="scrlsts()">
+                  </head>
+                
+                  <div class="bg">
+                    <div class="snowflakes" aria-hidden="true">
+                      <div class="snowflake">
+                        ■
+                      </div>
+                      <div class="snowflake">
+                        ■
+                      </div>
+                    </div>
+                    <body>
+                      <nav>
+                        <div class="nav-wrapper">
+                <!-- Icon Divider-->
+                   <!-- About Section Heading-->
+                   <div class="text-center">
+                </div>
+                <!-- Icon Divider-->
+                
+                    <h1 class="masthead-heading mb-0">Stellar Client</h1></div>
+                    
+                    <p>Download Stellar Client now, and distinguish yourself from other users</p>
+                
+        </header>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-light">Feature</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Items-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="https://cdn.discordapp.com/attachments/1061005492840825002/1062810038713978920/Picsart_23-01-11_20-07-27-819.png" alt="FPS Boost"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="https://cdn.discordapp.com/attachments/1061005492840825002/1062810038713978920/Picsart_23-01-11_20-07-27-819.png" alt="Clean Design"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="https://cdn.discordapp.com/attachments/1061005492840825002/1062810038713978920/Picsart_23-01-11_20-07-27-819.png" alt="Cracked Accout Support"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="https://cdn.discordapp.com/attachments/1061005492840825002/1062810038713978920/Picsart_23-01-11_20-07-27-819.png        " alt="Large number of mods"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">FPS Boost</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="" alt=""/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5"></p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Clean Design</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="" alt=""/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5"></p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">KeyStrokes</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="" alt=""/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5"></p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Cosmetics</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="" alt=""/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5"></p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">About</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                  <center><p>Stellar Client is a modpack and FPS booster for Minecraft!
+                      Reliable and easy to use..</p></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="page-section-heading text-white d-inline-block mb-0">Dowload</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+             <!-- Contact Section Content-->
+             <div class="row justify-content-center">
+              <div class="col-lg-4">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="fab fa fa-star"></div>
+                      <div class="text-muted"></div><a class="lead font-weight-bold" href="">Coming soon..</a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="fab fa fa-star"></div>
+                      <div class="text-muted"></div><a class="lead font-weight-bold" href="">Coming soon..</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer class="footer text-center">
+      <div class="container">
+          <div class="row">
+              <!-- Footer Location-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="mb-4"></h4>
+                  <p class="pre-wrap lead mb-0"></p>
+                  <a class="pre-wrap lead" href=""></a>
+              </div>
+              <!-- Footer Social Icons-->
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="mb-4">Join in our Discord</h4><a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/FnABNRCNGm"><i class="fab fa-fw fa-discord"></i></a>
+              </div>
+                    <!-- Footer About Text-->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap">Copyright © Stellar Dev</small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
